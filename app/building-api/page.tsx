@@ -22,20 +22,9 @@ export default function BuildingApiPage() {
           <p className="mt-3 text-lg">Exercise 2.6 • Static Website Project</p>
         </div>
 
-        {/* Lead Image */}
-        <div className="p-8">
-          <Image
-            src="/api-image.jpg"
-            alt="API Development"
-            width={1200}
-            height={700}
-            className="rounded-lg shadow-md w-full h-auto"
-          />
-
-          <p className="text-sm text-gray-500 mt-2 italic">
-            Figure 1. Building and testing an API.
-          </p>
-        </div>
+        <p className="text-sm text-gray-500 mt-2 italic">
+          Figure 1. Building and testing an API.
+        </p>
 
         {/* Article */}
         <div className="px-8 pb-10 space-y-6 text-gray-700 leading-8">
