@@ -24,14 +24,15 @@ export default function BuildingApiPage() {
           <Image
             src="/api-deployment.jpg"
             alt="Cloud infrastructure representing API deployment"
-            width={1600}
-            height={900}
+            width={1400}
+            height={700}
             priority
             className="h-auto w-full rounded-xl object-cover shadow-lg sm:rounded-2xl"
           />
 
           <p className="mt-3 text-sm italic text-slate-500">
-            Figure 1. Cloud infrastructure representing API deployment.
+            Figure 1. Illustration of cloud infrastructure used to deploy and
+            host a web API.
           </p>
         </div>
 
