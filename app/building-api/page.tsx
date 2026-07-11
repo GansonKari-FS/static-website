@@ -11,6 +11,14 @@ export default function BuildingApiPage() {
             Building and Deploying an API: What I Learned
           </h1>
 
+          <Image
+            src="/api-deployment.jpg"
+            alt="Cloud infrastructure representing API deployment"
+            width={900}
+            height={500}
+            className="rounded-lg my-6 shadow-lg"
+          />
+
           <p className="mt-3 text-lg">Exercise 2.6 • Static Website Project</p>
         </div>
 
