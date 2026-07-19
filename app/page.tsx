@@ -19,87 +19,112 @@ export default function Home() {
           </p>
         </header>
 
-        <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <article className="overflow-hidden rounded-3xl bg-white text-slate-900 shadow-2xl">
-            <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 px-6 py-8 text-white sm:px-8">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-blue-100">
-                Featured Article
-              </p>
+        <section>
+          <h2 className="mb-10 text-center text-3xl font-bold">
+            Latest Articles
+          </h2>
 
-              <h2 className="text-3xl font-bold leading-tight sm:text-4xl">
-                Building and Deploying an API: What I Learned
-              </h2>
-
-              <p className="mt-4 max-w-2xl text-base leading-7 text-blue-100 sm:text-lg">
-                A reflection on API requests, testing with Postman, deployment,
-                and the importance of reliable responses.
-              </p>
-            </div>
-
-            <div className="space-y-5 px-6 py-8 sm:px-8">
-              <p className="text-base leading-8 text-slate-700 sm:text-lg">
-                In this Exercise 2.6 update, I explored what happens after an
-                API is created, how developers test requests, and what matters
-                when an API is deployed to a live environment.
-              </p>
-
-              <div className="flex flex-wrap gap-3">
-                <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-800">
-                  APIs
-                </span>
-
-                <span className="rounded-full bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-800">
-                  Postman
-                </span>
-
-                <span className="rounded-full bg-purple-100 px-4 py-2 text-sm font-semibold text-purple-800">
-                  Deployment
-                </span>
-              </div>
-
-              <Link
-                href="/building-api"
-                className="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-6 py-3 font-semibold text-white transition hover:bg-blue-800 sm:w-auto"
-              >
-                Read the Article →
-              </Link>
-            </div>
-          </article>
-
-          <aside className="rounded-3xl border border-white/10 bg-white/10 p-6 shadow-xl backdrop-blur sm:p-8">
-            <h2 className="text-2xl font-bold">About This Site</h2>
-
-            <p className="mt-4 leading-8 text-slate-300">
-              This website began as a Module 1 static-site deployment project.
-              It is now being updated with new technical articles that reflect
-              what I am learning throughout the course.
-            </p>
-
-            <div className="mt-8 space-y-4">
-              <div className="rounded-2xl bg-white/10 p-5">
-                <h3 className="font-bold text-white">Built With</h3>
-                <p className="mt-2 text-slate-300">
-                  Next.js, TypeScript, Tailwind CSS, GitHub, and Vercel
+          <div className="grid gap-8 md:grid-cols-2">
+            <article className="overflow-hidden rounded-3xl bg-white text-slate-900 shadow-2xl">
+              <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 px-6 py-8 text-white">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-blue-100">
+                  Exercise 2.6
                 </p>
+
+                <h3 className="text-3xl font-bold leading-tight">
+                  Building and Deploying an API
+                </h3>
               </div>
 
-              <div className="rounded-2xl bg-white/10 p-5">
-                <h3 className="font-bold text-white">Current Update</h3>
-                <p className="mt-2 text-slate-300">
-                  Exercise 2.6 — Building and Deploying an API
+              <div className="space-y-5 px-6 py-8">
+                <p className="leading-8 text-slate-700">
+                  What I learned about API requests, testing with Postman,
+                  deployment, and reliable server responses.
                 </p>
-              </div>
-            </div>
 
-            <a
-              href="https://github.com/GansonKari-FS/static-website"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex w-full items-center justify-center rounded-xl border border-white/30 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-950"
-            >
-              View GitHub Repository
-            </a>
-          </aside>
+                <div className="flex flex-wrap gap-3">
+                  <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-800">
+                    APIs
+                  </span>
+
+                  <span className="rounded-full bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-800">
+                    Postman
+                  </span>
+
+                  <span className="rounded-full bg-purple-100 px-4 py-2 text-sm font-semibold text-purple-800">
+                    Deployment
+                  </span>
+                </div>
+
+                <Link
+                  href="/building-api"
+                  className="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-6 py-3 font-semibold text-white transition hover:bg-blue-800 sm:w-auto"
+                >
+                  Read Article →
+                </Link>
+              </div>
+            </article>
+
+            <article className="overflow-hidden rounded-3xl bg-white text-slate-900 shadow-2xl">
+              <div className="bg-gradient-to-r from-cyan-700 via-blue-700 to-indigo-700 px-6 py-8 text-white">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-100">
+                  Exercise 3.6
+                </p>
+
+                <h3 className="text-3xl font-bold leading-tight">
+                  Securing an API
+                </h3>
+              </div>
+
+              <div className="space-y-5 px-6 py-8">
+                <p className="leading-8 text-slate-700">
+                  What I learned about authentication, authorization, request
+                  validation, HTTPS, environment variables, and safe error
+                  handling.
+                </p>
+
+                <div className="flex flex-wrap gap-3">
+                  <span className="rounded-full bg-cyan-100 px-4 py-2 text-sm font-semibold text-cyan-800">
+                    Security
+                  </span>
+
+                  <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-800">
+                    Authentication
+                  </span>
+
+                  <span className="rounded-full bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-800">
+                    HTTPS
+                  </span>
+                </div>
+
+                <Link
+                  href="/securing-api"
+                  className="inline-flex w-full items-center justify-center rounded-xl bg-cyan-700 px-6 py-3 font-semibold text-white transition hover:bg-cyan-800 sm:w-auto"
+                >
+                  Read Article →
+                </Link>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section className="mt-12 rounded-3xl border border-white/10 bg-white/10 p-6 shadow-xl backdrop-blur sm:p-8">
+          <h2 className="text-2xl font-bold">About This Site</h2>
+
+          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
+            This website began as a Module 1 static-site project and continues
+            to grow with new technical articles about APIs, deployment, and
+            multi-platform development.
+          </p>
+
+          <a
+            href="https://github.com/GansonKari-FS/static-website"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex w-full items-center justify-center rounded-xl border border-white/30 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-950 sm:w-auto"
+          >
+            View GitHub Repository
+          </a>
         </section>
 
         <footer className="mt-12 text-center text-sm text-slate-400">
